@@ -26,6 +26,7 @@ h4 {
   line-height: 1;
   margin-bottom: 0.5rem;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 p {
@@ -83,7 +84,8 @@ header {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 1rem 0;
+  margin: 1rem auto;
 }
 
 .statistics {
@@ -108,6 +110,128 @@ section {
 .statistics div h1 {
   font-size: 3rem;
   margin: 1rem 0;
+}
+
+.sect {
+  margin: 4rem auto;
+}
+
+.section__content h1,
+.sect h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.a,
+.b,
+.c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.b {
+  flex-direction: row-reverse;
+}
+
+.sect-a .section-inner,
+.sect-c .section-inner {
+  background: var(--Very-Pale-Blue);
+}
+
+.d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.d .btn {
+  margin-top: 1.5rem;
+}
+
+footer {
+  color: #ffffff;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.footer-inner {
+  background: var(--Very-Dark-Cyan);
+  padding: 5rem 0;
+}
+
+.footer-inner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.footer-col {
+  width: 50%;
+}
+
+.footer-col .logo {
+  width: 200px;
+}
+
+.contact {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.contact img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1.2rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  padding: 0.4rem;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subscribe {
+  background: var(--Pink);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  margin-left: 1rem;
+  transition: all 0.4s ease;
+}
+
+.subscribe:hover {
+  color: var(--Pink);
+  background: #ffffff;
+}
+
+.social-links-item {
+  margin-top: 2rem;
+}
+
+.social-links-item i {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.social-links-item i:hover {
+  color: var(--Pink);
 }
 
 .btn {
