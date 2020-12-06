@@ -36,6 +36,7 @@ p {
 img {
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 a {
@@ -114,6 +115,7 @@ section {
 
 .sect {
   margin: 4rem auto;
+  padding: 2rem 0;
 }
 
 .section__content h1,
@@ -122,9 +124,7 @@ section {
   margin-bottom: 1rem;
 }
 
-.a,
-.b,
-.c {
+.section-inner .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,7 +174,7 @@ footer p {
 }
 
 .footer-col {
-  width: 50%;
+  width: 100%;
 }
 
 .footer-col .logo {
@@ -194,14 +194,12 @@ footer p {
 
 form {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 input {
   padding: 0.4rem;
   border: none;
-  display: inline-block;
   border-radius: 4px;
   font-family: "Open Sans", sans-serif;
 }
@@ -234,6 +232,14 @@ input {
   color: var(--Pink);
 }
 
+.footer-col h2 {
+  text-transform: uppercase;
+}
+
+.text {
+  width: 60%;
+}
+
 .btn {
   display: inline-block;
   padding: 0.3rem 1.6rem;
@@ -260,4 +266,89 @@ input {
 .btn-bg:hover {
   color: var(--Pink);
   background: #fff;
+}
+
+@media (max-width: 700px) {
+  .footer-inner-grid {
+    grid-template-columns: 1fr;
+  }
+  .text {
+    width: 80%;
+  }
+  .section-inner .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .statistics {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .statistics div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .statistics div img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .statistics div h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  form {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  input:not(.subscribe) {
+    width: 100%;
+  }
+
+  .subscribe {
+    margin-left: 0;
+  }
+
+  .footer-col:nth-child(2) {
+    order: -1;
+  }
+
+  .footer-inner {
+    padding: 3rem 0;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .section__content h1,
+  .sect h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .sect {
+    margin: 2rem auto;
+  }
+  .section__content {
+    text-align: center;
+  }
+  .btn {
+    padding: 0.2rem 1rem;
+  }
+  .btn-bg {
+    padding: 0.4rem 3rem;
+  }
 }
